@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="headline">Weather Forecast</h1>
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button onclick="searchWeather()">Search</button>
+        </div>
+        <div class="city-options">
+            <p>Popular Cities: <a href="#" onclick="searchCity('New York')">New York</a>, <a href="#" onclick="searchCity('London')">London</a>, <a href="#" onclick="searchCity('Tokyo')">Tokyo</a>, <a href="#" onclick="searchCity('Sydney')">Sydney</a></p>
+        </div>
+        <div id="weather-result" class="weather-result"></div>
+        <div id="error-message" class="error-message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
